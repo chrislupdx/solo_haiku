@@ -23,7 +23,8 @@ describe('user model', () => {
       email: 'test@test.com'
     });
     expect(user.toJSON()).toEqual({
-      _id: expect.any(mongoose.Types.ObjectId)
+      _id: expect.any(mongoose.Types.ObjectId),
+      email: 'test@test.com'
     });
   });
 
